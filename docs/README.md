@@ -8,7 +8,7 @@ Este componente permite realizar una búsqueda por departamento.
 
 ### Paso 1 - Clonar
 
-Realizar la [clonacion](git@github.com:Daniela1421/itgloberspartnercl-custom-department-search.git) de este repositorio.
+Realizar la [clonación](https://github.com/Daniela1421/itgloberspartnercl-custom-department-search.git) de este repositorio.
 
 ### Paso 2 - Editar el Manifest.json 
 
