@@ -2,7 +2,7 @@
 
 Este componente permite realizar una búsqueda por departamento. 
 
-![custom-department-search](https://user-images.githubusercontent.com/92064924/204350625-b421481f-d674-4229-ae10-9bb241509d5a.png)
+![image](https://user-images.githubusercontent.com/92064924/204684039-6afe6645-2b04-4b70-85e9-ded07fed2883.png)
 
 ## Configuration 
 
