@@ -11,8 +11,9 @@ const DepartmentSearch = () => {
   const { data, loading} = useQuery(QUERY_VALUE);
   const [slug, setSlug] = useState(""); 
   const CSS_HANLDES = [
-    "deparment__search--container", 
-    "department__search--searchBar"
+    "department__search--container", 
+    "department__search--searchBar", 
+    "department__search"
   ]
   const handles = useCssHandles(CSS_HANLDES)
 
@@ -20,16 +21,21 @@ const DepartmentSearch = () => {
   ? 
     <div>Loading....</div> 
   : 
-    <div className={`flex ${handles["deparment__search--container"]}`}>
-      <DepartmentGroup 
-        departments={data?.categories}
-        handleSetSlug={setSlug}
-      />
-      <SearchBar className= {handles["department__search--searchBar"]}
-        customSearchPageUrl={slug}
-        placehoder="¿Qué buscas en Kanu Pet?"
-        displayMode="search-and-clear-buttons"
-      /> 
+    <div className={`flex ${handles["department__search--container"]}`}>
+      <div>
+        <h2>Búsqueda por departamentos</h2>
+      </div>
+      <div className={handles["department__search"]}>
+        <DepartmentGroup 
+          departments={data?.categories}
+          handleSetSlug={setSlug}
+        />
+        <SearchBar className= {handles["department__search--searchBar"]}
+          customSearchPageUrl={slug}
+          placehoder="¿Qué buscas en Kanu Pet?"
+          displayMode="search-and-clear-buttons"
+        /> 
+      </div>
     </div>
 }
 
